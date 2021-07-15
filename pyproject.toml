@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "schemaviz"
+version = "0.1.0"
+description = ""
+authors = ["Ben Russell <benr@cal-am.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+bokeh = "^2.3.1"
+SQLAlchemy = "^1.4.8"
+networkx = "^2.5.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[tool.poetry.scripts]
+main = "schemaviz.main:run"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
